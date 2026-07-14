@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <title>I'm Sorry</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Animated pastel background blobs -->
+  <div class="bg-blob blob1"></div>
+  <div class="bg-blob blob2"></div>
+  <div class="bg-blob blob3"></div>
+
+  <!-- SCREEN 1: The Plea -->
+  <div id="screen1" class="screen">
+    <h1 class="title">Will you forgive me?</h1>
+
+    <!-- Pure CSS/emoji cat face — no external image, nothing to break -->
+    <div class="cat-wrap">
+      <div class="cat-face" id="catFace">
+        <div class="cat-ear left"></div>
+        <div class="cat-ear right"></div>
+        <div class="cat-eyes">
+          <div class="cat-eye"></div>
+          <div class="cat-eye"></div>
+        </div>
+        <div class="cat-tear"></div>
+        <div class="cat-mouth"></div>
+        <div class="cat-whiskers left"></div>
+        <div class="cat-whiskers right"></div>
+      </div>
+    </div>
+
+    <p class="dodge-counter" id="dodgeCounter"></p>
+
+    <div class="btn-row" id="btnRow">
+      <button id="yesBtn" class="btn btn-yes">Yes 💗</button>
+      <button id="noBtn" class="btn btn-no">No</button>
+    </div>
+  </div>
+
+  <!-- SCREEN 2: The Reconciliation -->
+  <div id="screen2" class="screen hidden">
+    <div class="cat-wrap">
+      <div class="cat-face happy" id="happyCatFace">
+        <div class="cat-ear left"></div>
+        <div class="cat-ear right"></div>
+        <div class="cat-eyes happy-eyes">
+          <div class="cat-eye happy"></div>
+          <div class="cat-eye happy"></div>
+        </div>
+        <div class="cat-mouth happy"></div>
+        <div class="cat-whiskers left"></div>
+        <div class="cat-whiskers right"></div>
+        <div class="cat-blush left"></div>
+        <div class="cat-blush right"></div>
+      </div>
+    </div>
+
+    <h1 class="title">Yay! 🎉</h1>
+
+    <div class="letter-card">
+      <p class="letter">
+        I am sorry my love, will you forgive me darling? I LOVE YOU SO MUCH.
+        You mean the absolute world to me, and my days are so much brighter
+        when we are happy together. I promise to cherish you, listen to you,
+        and love you even more every single day. Please let me make it up to you.
+      </p>
+    </div>
+
+    <button id="muteBtn" class="btn btn-mute">🔊 Music On</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
